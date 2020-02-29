@@ -62,10 +62,15 @@ export class UserService {
      * @param password 
      */
     async checkUserPassword(userName: string,password: string): Promise<boolean> {
-        let saltPassword = (await this.userRepository.findOne({
+        let saltPassword: string;
+        const user = await this.userRepository.findOne({
             user_name: userName
-        })).user_saltPassword;
-        return await bcrypt.compare(password,saltPassword);
+        });
+        if(user) {
+            saltPassword = user.user_saltPassword;
+            return await bcrypt.compare(password,saltPassword);
+        }
+        return false;
     }
 
     /**

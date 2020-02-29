@@ -13,7 +13,8 @@ export class UploadService {
         return {
             error_code: 0,
             data: {
-                fileUrl: staticFilePath
+                fileUrl: staticFilePath,
+                fileType: file.mimetype
             }
         }
     }
