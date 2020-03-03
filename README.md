@@ -29,7 +29,7 @@ npm run start
 👤 **angellikefairy**
 
 * Github: [@Angellikefairy](https://github.com/Angellikefairy)
-* 个人博客: https://angellikefairy.github.io/archives/
+
 
 ## Show your support
 
