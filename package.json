@@ -24,7 +24,7 @@
     "@nestjs/common": "^6.7.2",
     "@nestjs/core": "^6.7.2",
     "@nestjs/platform-express": "^6.7.2",
-    "@nestjs/platform-socket.io": "^6.10.13",
+    "@nestjs/platform-socket.io": "^9.2.0",
     "@nestjs/websockets": "^6.10.13",
     "@types/bcryptjs": "^2.4.2",
     "bcryptjs": "^2.4.3",
